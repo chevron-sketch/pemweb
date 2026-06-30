@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cerlang — Belajar yang Nyambung</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span>Cerlang</span><span class="dot">.</span></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#mapel">Mata Pelajaran</a>
+      <a href="#kenapa">Kenapa Cerlang</a>
+      <a href="#cerita">Cerita Siswa</a>
+      <a href="#mulai" class="btn btn-ghost" style="padding:8px 18px;">Masuk</a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+  </nav>
+</header>
+
+<section class="hero ruled">
+  <div class="container hero-grid">
+    <div>
+      <div class="hero-eyebrow"><span class="label">Belajar Online · SMP–SMA</span></div>
+      <h1>Catatan pelajaran <em>yang benar-benar</em> nyambung di kepala.</h1>
+      <p class="lede">Cerlang menyusun materi sekolah jadi video singkat, latihan soal adaptif, dan catatan ringkas — biar belajar nggak cuma hafalan semalam sebelum ujian.</p>
+      <div class="hero-actions">
+        <button class="btn" id="ctaCoba">Coba Gratis 7 Hari</button>
+        <a href="#mapel" class="secondary">Lihat mata pelajaran ↓</a>
+      </div>
+    </div>
+
+    <div class="notebook-card reveal">
+      <h3>Buku Catatan Hari Ini</h3>
+      <div class="entry"><span>Fungsi Kuadrat — Matematika</span><span class="tag">selesai</span></div>
+      <div class="entry"><span>Teks Eksplanasi — B. Indonesia</span><span class="tag">selesai</span></div>
+      <div class="entry"><span>Hukum Newton — Fisika</span><span class="tag" style="background:var(--gold);">berlangsung</span></div>
+      <div class="entry"><span>Revolusi Industri — Sejarah</span><span class="tag" style="background:var(--paper-line); color:#555;">terjadwal</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="reveal"><div class="num" id="statSiswa">0</div><div class="desc">Siswa aktif belajar</div></div>
+    <div class="reveal"><div class="num" id="statVideo">0</div><div class="desc">Video pembelajaran</div></div>
+    <div class="reveal"><div class="num" id="statSoal">0</div><div class="desc">Bank soal latihan</div></div>
+    <div class="reveal"><div class="num" id="statGuru">0</div><div class="desc">Pengajar berpengalaman</div></div>
+  </div>
+</section>
+
+<section class="section" id="mapel">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">Mata Pelajaran</span>
+      <h2>Semua pelajaran inti, satu tempat.</h2>
+      <p>Materi disusun sesuai kurikulum terbaru, dilengkapi rangkuman dan latihan soal di tiap bab.</p>
+    </div>
+    <div class="subjects" id="subjectGrid"></div>
+  </div>
+</section>
+
+<section class="section why" id="kenapa">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="label">Kenapa Cerlang</span>
+      <h2>Dibangun supaya belajar nggak terasa berat.</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal">
+        <h3>Latihan menyesuaikan kemampuan</h3>
+        <p>Soal jadi lebih mudah atau menantang tergantung jawabanmu sebelumnya, jadi nggak buang waktu di materi yang sudah kamu kuasai.</p>
+      </div>
+      <div class="why-item reveal">
+        <h3>Catatan otomatis tersusun rapi</h3>
+        <p>Tiap video pembelajaran punya rangkuman tertulis yang bisa kamu unduh dan baca ulang sebelum ujian.</p>
+      </div>
+      <div class="why-item reveal">
+        <h3>Bisa tanya langsung ke pengajar</h3>
+        <p>Forum tanya-jawab dijaga oleh pengajar mata pelajaran, bukan cuma sesama siswa, jadi jawabannya bisa dipercaya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial" id="cerita">
+  <div class="container">
+    <div class="testi-card">
+      <p class="quote reveal" id="quoteText">"Dulu nilai Matematika saya selalu di bawah rata-rata. Setelah tiga bulan pakai Cerlang, saya akhirnya paham logika di balik rumus, bukan cuma hafal."</p>
+      <div class="who" id="quoteWho">— RAFI A., KELAS 9, JAKARTA</div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta ruled" id="mulai">
+  <div class="container">
+    <h2>Mulai catatan belajarmu hari ini.</h2>
+    <p>Gratis 7 hari pertama, tanpa kartu kredit. Batalkan kapan saja.</p>
+    <button class="btn" id="ctaBawah">Daftar Sekarang</button>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;">Cerlang<span class="dot">.</span></div>
+        <p style="margin-top:14px; opacity:0.7; max-width:260px;">Teman belajar online untuk siswa SMP dan SMA di seluruh Indonesia.</p>
+      </div>
+      <div>
+        <h4>Belajar</h4>
+        <ul>
+          <li><a href="#mapel">Mata Pelajaran</a></li>
+          <li><a href="#">Bank Soal</a></li>
+          <li><a href="#">Try Out</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Tentang</h4>
+        <ul>
+          <li><a href="#kenapa">Kenapa Cerlang</a></li>
+          <li><a href="#cerita">Cerita Siswa</a></li>
+          <li><a href="#">Karier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <ul>
+          <li><a href="#">Pusat Bantuan</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Cerlang. Semua hak dilindungi.</span>
+      <span>Dibuat untuk siswa Indonesia.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
